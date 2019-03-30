@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree");
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+
+body{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 30px 375px 135px 95px;
+	grid-gap: 2px;
+
+	grid-template-areas: 
+	"header1 header2 header3"
+	"art1 art2 art3"
+	"art4 art5 art6"
+	"footer1 footer2 footer3";
+
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	color: white;
+	box-sizing: border-box;
+
+	background-image: url("../images/backgroundMobile.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#header1{
+	grid-area: header1;
+}
+
+#header2{
+	grid-area: header2;
+}
+
+#header3{
+	grid-area: header3;
+	text-align: right;
+}
+
+#header1,#header3{
+	font-family: Share Tech Mono;
+	margin-top: 5px;
+}
+
+#art1{
+	grid-area: art1;
+}
+
+#art2{
+	grid-area: art2;
+}
+
+#art3{
+	grid-area: art3;
+}
+
+#art4{
+	grid-area: art4;
+}
+
+#art5{
+	grid-area: art5;
+}
+
+#art6{
+	grid-area: art6;
+}
+
+#footer1{
+	grid-area: footer1;
+}
+
+#footer2{
+	grid-area: footer2;
+}
+
+#footer3{
+	grid-area: footer3;
+}
+
+#art1,#art2,#art4,#art5,#footer1,#footer2{
+	border-right: 1px solid rgba(191, 191, 191, 0.1);
+}
+
+.weatherIcon{
+	width: 75px;
+	padding-top: 30px;
+	display: block;
+	margin: 0 auto;
+	border-top: 1px solid rgba(191, 191, 191, 0.1);
+}
+
+.flag{
+	display: block;
+	width: 30px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+h1{
+	font-size: 1em;
+	text-align: center;
+	font-family: Bai Jamjuree;
+	margin-top: 20px;
+}
+
+#Baikonur,#WhiteSands{
+	margin: 30px auto 21px auto;
+}
+
+i{
+	padding-right: 10px;
+}
+
+.degC,.windSpeed,.elevationText{
+	font-family: Bai Jamjuree;
+	display: block;
+	text-align: center;
+	font-size: 1.6em;
+}
+
+.windSpeed{
+	padding-top: 45px;
+	font-size: 1em;
+}
+
+.elevationText{
+	font-size: 1.2em;
+	padding-top: 20px;
+}
+
+.elevationIcon{
+	width: 50px;
+}
+
+#art4 img{
+	height: 35px;
+	padding-top: 25px;
+	display: block;
+	margin: 0 auto;
+}
+
+#art5 img{
+	height: 27px;
+	padding-top: 33px;
+	display: block;
+	margin: 0 auto;
+}
+
+#art6 img{
+	height: 45px;
+	padding-top: 15px;
+	display: block;
+	margin: 0 auto;
+}
+
+#footer1,#footer2,#footer3{
+	font-size: 0.8em;
+	font-family: Share Tech Mono;
+	text-align: center;
+}
+
+.landingSpotIcon{
+	width: 20px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-left: 27.5px;
+	padding-right: 27.5px;
+	border-top: 1px solid rgba(191, 191, 191, 0.1);
+}
+
+#spaceXLogo{
+	width: 40px;
+	display: block;
+	margin: -10px auto 0 40px;
+}
+
+
+/* -------------------------------------------------------------------------TABLET------------------------------------------------------------------------- */
+
+
+@media only screen and (min-width: 720px) and (max-width: 1024px){
+	
+	body{
+		background-image: url("../images/backgroundTablet.jpg");
+		background-size: 190%;
+
+		grid-template-rows: 50px 600px 215px 150px;
+	}
+
+	h1,#Baikonur,#WhiteSands{
+		font-size: 1.9em;
+		margin-top: 40px;
+	}
+
+	.flag{
+		width: 70px;
+		padding-top: 80px;
+	}
+
+	.weatherIcon{
+		width: 100px;
+		padding: 60px 60px 0 60px;
+	}
+
+	.degC{
+		font-size: 2.5em;
+		padding-top: 20px;
+	}
+
+	.windSpeed{
+		font-size: 1.5em;
+		padding-top: 60px;
+	}
+
+	.elevationIcon{
+		width: 70px;
+	}
+
+	#art4 img{
+		height: 48px;
+		padding-top: 62px;
+	}
+
+	#art5 img{
+		height: 38px;
+		padding-top: 72px;
+	}
+
+	#art6 img{
+		height: 63px;
+		padding-top: 47px;
+	}
+
+	.elevationText{
+		font-size: 1.5em;
+		padding-top: 30px;
+	}
+
+	#footer1,#footer2,#footer3{
+		font-size: 1.1em;
+	}
+
+	.landingSpotIcon{
+		width: 30px;
+		padding: 40px 95px 15px 95px;
+	}
+
+	#header1,#header3{
+		font-size: 1.3em;
+	}
+
+	#spaceXLogo{
+		width: 65px;
+		margin: -23px auto 0 auto;
+	}
+
+
+}
+
+
+/* -------------------------------------------------------------------------LAPTOP------------------------------------------------------------------------- */
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1439px){
+
+	body{
+		background-image: url("../images/backgroundLaptop.jpg");
+		background-size: 120%;
+
+		grid-template-rows: 50px 600px 200px 150px;
+	}
+
+	h1,#Baikonur,#WhiteSands{
+		font-size: 2.3em;
+	}
+
+	.flag{
+		width: 70px;
+		padding-top: 40px;
+	}
+
+	.weatherIcon{
+		width: 120px;
+		padding: 60px 140px 0 140px;
+	}
+
+	.degC{
+		font-size: 3em;
+	}
+
+	.windSpeed{
+		font-size: 1.6em;
+		padding-top: 40px;
+	}
+
+	#footer1,#footer2,#footer3{
+		font-size: 1.3em;
+	}
+
+	#spaceXLogo{
+		width: 80px;
+		margin: -30px auto 0 auto;
+	}
+		
+	.landingSpotIcon{
+		width: 40px;
+		padding: 40px 180px 15px 180px;
+	}
+
+	.elevationIcon{
+		width: 90px;
+	}
+
+	#art4 img{
+		height: 62px;
+		padding-top: 38px;
+	}
+
+	#art5 img{
+		height: 49px;
+		padding-top: 51px;
+	}
+
+	#art6 img{
+		height: 81px;
+		padding-top: 19px;
+	}
+
+	.elevationText{
+		font-size: 1.7em;
+		padding-top: 30px;
+	}
+
+
+}
+
+
+/* -------------------------------------------------------------------------DESKTOP------------------------------------------------------------------------- */
+
+
+@media only screen and (min-width: 1440px){
+
+
+	body{
+		background-image: url("../images/backgroundDesktop.jpg");
+		background-size: 100%;
+
+		grid-template-rows: 40px 550px 180px 140px;
+	}
+
+	h1,#Baikonur,#WhiteSands{
+		font-size: 3em;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.flag{
+		width: 70px;
+		padding-top: 20px;
+	}
+
+	.weatherIcon{
+		width: 120px;
+		padding: 40px 140px 0 140px;
+	}
+
+	.degC{
+		font-size: 3em;
+		padding-top: 0;
+	}
+
+	.windSpeed{
+		font-size: 1.8em;
+		padding-top: 40px;
+	}
+
+	.elevationIcon{
+		width: 90px;
+	}
+
+	#art4 img{
+		height: 75px;
+		padding-top: 25px;
+	}
+
+	#art5 img{
+		height: 60px;
+		padding-top: 40px;
+	}
+
+	#art6 img{
+		height: 99px;
+		padding-top: 1px;
+	}
+
+	.elevationText{
+		font-size: 1.5em;
+		padding-top: 20px;
+	}
+
+	.landingSpotIcon{
+		width: 40px;
+		padding: 30px 180px 15px 180px;
+	}
+
+	#footer1,#footer2,#footer3{
+		font-size: 1.3em;
+	}
+
+	#spaceXLogo{
+		width: 70px;
+		margin: -20px auto 0 auto;
+	}
+
+	#header1,#header3{
+	font-size: 1.3em;
+	margin: 10px 10px 0 10px;
+	}
+
+	#footer1 p,#footer2 p,#footer3 p{
+		margin-top: 0;
+	}
+
+}
