@@ -20,7 +20,7 @@ body{
 
 	background-image: url("../images/backgroundMobile.jpg");
 	background-position: center center;
-	background-size: cover;
+	background-size: 225%;
 	background-repeat: no-repeat;
 }
 
