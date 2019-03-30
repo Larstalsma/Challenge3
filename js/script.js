@@ -60,7 +60,7 @@ function onWeatherError(error, id) {
 
 
 function getElevationData(latitude, longitude, id2) {
-    var request = 'http://open.mapquestapi.com/elevation/v1/profile?key=uV4sKUUwnFl2Cqps8bNb3SKvVXyNoQLk&shapeFormat=raw&latLngCollection=' + latitude + "," + longitude;
+    var request = 'https://open.mapquestapi.com/elevation/v1/profile?key=uV4sKUUwnFl2Cqps8bNb3SKvVXyNoQLk&shapeFormat=raw&latLngCollection=' + latitude + "," + longitude;
     var mountainIcon = '<i class="fas fa-mountain"></i>';
     fetch(request)
 
